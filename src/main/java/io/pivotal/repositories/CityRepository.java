@@ -11,7 +11,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 @RepositoryRestResource(collectionResourceRel = "cities", path = "cities")
 public interface CityRepository extends PagingAndSortingRepository<City,Long> {
 
-    @RestResource(path = "name", rel = "name")
+   /* @RestResource(path = "name", rel = "name")
     Page<City> findByNameIgnoreCase(@Param("q") String name, Pageable pageable);
 
     @RestResource(path = "nameContains", rel = "nameContains")
@@ -21,5 +21,7 @@ public interface CityRepository extends PagingAndSortingRepository<City,Long> {
     Page<City> findByStateCodeIgnoreCase(@Param("q") String stateCode, Pageable pageable);
 
     @RestResource(path = "postalCode", rel = "postalCode")
-    Page<City> findByPostalCode(@Param("q") String postalCode, Pageable pageable);
+    Page<City> findByPostalCode(@Param("q") String postalCode, Pageable pageable);*/
+
+
 }

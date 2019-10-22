@@ -14,7 +14,7 @@ public class FlappingHealthIndicator implements HealthIndicator {
     @Override
     public Health health() {
         int result = random.nextInt(100);
-        if (result < 50) {
+        if (result < 40) {
             return Health.down().withDetail("flapper", "failure").withDetail("random", result).build();
         } else {
             return Health.up().withDetail("flapper", "ok").withDetail("random", result).build();
